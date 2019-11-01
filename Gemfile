@@ -55,8 +55,4 @@ gem 'haml-rails'
 gem "font-awesome-rails"
 gem "devise"
 gem "haml-rails"
-<<<<<<< Updated upstream
 gem "erb2haml"
-=======
-gem "erb2haml"
->>>>>>> Stashed changes

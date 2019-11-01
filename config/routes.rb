@@ -5,8 +5,4 @@ Rails.application.routes.draw do
   resources :groups, only: [:new, :create, :edit, :update] do
     resources :messages, only: [:index]
   end
-<<<<<<< Updated upstream
 end
-=======
-end
->>>>>>> Stashed changes
