@@ -15,7 +15,9 @@ $(function(){
                     <div>
                       ${content}
                     </div>
+                    <div>
                       ${img}
+                    </div>
                   </p>
                 </div>`
   return html;
@@ -37,6 +39,7 @@ $(function(){
       $('.messages').append(html);
       $('#message_content').val('');
       $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');
+      $("#new_message")[0].reset();
     })
     .fail(function(data){
       alert('エラーが発生したためメッセージは送信できませんでした。');
@@ -46,64 +49,3 @@ $(function(){
     })
   })
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // function buildHTML(message){
-  // if (message.image) {
-  //   var html = `<p>
-  //                   <strong>
-  //                     <a href= "lower_message__image"></a>
-  //                   </strong>
-  //                 </p> 
-  //                 `
-  // } else {
-  //   var html = `<p>
-  //                    <strong>
-  //                      <a href= "lower_message__content"></a>
-  //                    </strong>
-  //                  </p>
-  //                  `
-  //   }
-  // return html
-//   // }
-//   $('#new_message').on('submit', function(e){
-//   e.preventDefault();
-//     var formData = new FormData(this);
-//     var url = $(this).attr('action')
-//     $.ajax({
-//       url: url,
-//       type: "POST",
-//       data: formData,
-//       dataType: 'json',
-//       processData: false,
-//       contentType: false
-//     })
-//     // .done(function(data){
-//     //   var html = buildHTML(data);
-//     //   $('.message').append(html);
-//     //   $('.content').val('');
-//     //   $('.form__submit').prop('disabled', false);
-//     // })
-//   })
-// })
-
