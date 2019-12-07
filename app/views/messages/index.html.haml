@@ -10,7 +10,8 @@
         .left-header__members
           Member：
           .member
-            menber
+            - @group.users.each do |user|
+              = user.name
       .right-header
         .right-header__button
           = link_to edit_group_path(@group.id) do
