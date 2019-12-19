@@ -11,14 +11,12 @@ $(function(){
                       ${message.date}
                     </div>
                   </div>
-                  <p class="lower-message">
-                    <p>
-                      ${content}
+                  <div class="lower-message">
+                    <p class="lower-message__content">
+                    ${message.content}
                     </p>
-                    <div>
-                      ${img}
+                    ${img}
                     </div>
-                  </p>
                 </div>`
     return html;
   }
